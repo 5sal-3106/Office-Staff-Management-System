@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1e;
+  color: #f5f5f7;
+  font-family: "Poppins", sans-serif;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 35px;
+  color: #ff6f61;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 70px 60px 1fr;
+  grid-template-areas:
+      "header"
+      "nav"
+      "main";
+  height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background-color: #2c2c2e;
+  color: #f5f5f7;
+}
+
+/* ---------- TOP NAVIGATION ---------- */
+.top-nav {
+  grid-area: nav;
+  background-color: #2c2c2e;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list-item {
+  padding: 10px 20px;
+}
+
+.nav-list-item a {
+  text-decoration: none;
+  color: #ff6f61;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list-item a:hover {
+  background-color: #3a3a3c;
+  border-radius: 5px;
+}
+
+.nav-list-item span {
+  margin-right: 10px;
+}
+
+/* ---------- MAIN ---------- */
+.main-container {
+  grid-area: main;
+  padding: 20px;
+  background-color: #1c1c1e;
+  color: #f5f5f7;
+}
+
+.main-title h2 {
+  margin: 0;
+  color: #ff6f61;
+}
+
+.main-content {
+  margin-top: 20px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  padding: 10px;
+  background-color: #2c2c2e;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.info-list li strong {
+  color: #ff6f61;
+}

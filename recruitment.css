@@ -1,0 +1,89 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul li {
+    float: left;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #111;
+}
+
+.recruitment {
+    width: 100%;
+    height: 100vh;
+    background: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.main img {
+    width: 50%;
+}
+
+.recruitment-text {
+    width: 50%;
+    padding: 20px;
+}
+
+.recruitment-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.recruitment-text h5 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.recruitment-text p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.recruitment-text button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background: #333;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.recruitment-text button:hover {
+    background: #555;
+}

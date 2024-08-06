@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+ 
+        <meta charset="UTF-8">
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="register.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+<body>
+    
+    
+   
+    
+    <li><a href="adminhome.php">DASHBOARD</a></li>
+        
+
+    <div class="container">
+        <div class="title">Add Employee</div>
+        <form action="register.php" method="post">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter your full name" name="Full_Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">User Name</span>
+                    <input type="text" placeholder="Enter your User name" name="User_Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Enter your Email" name="Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" placeholder="Enter 10 Digit Phone Number" pattern="[0-9]{10}" name="Phone_Number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="password" placeholder="Enter your Password" minlength="10" name="Password" required>
+                </div>
+                
+                
+                <div class="input-box">
+                    <span class="details">Gender</span>
+                    <select name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                
+                
+            </div>
+            <div class="button">
+                <input type="submit" value="Register" name="Register">
+                <p style="text-align: center;"  >Already have an account? <a href="emplogin.html">Login now</a></p>
+            </div>
+        </form>
+    </div>
+</body>    
+</html>

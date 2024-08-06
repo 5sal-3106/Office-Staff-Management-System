@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Salary Calculation</title>
+        <link rel="stylesheet" type="text/css" href="calculation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="payroll.html">BACK</a></li>
+        </ul>
+        <section class="calculation">
+            <div class="main">
+                <h1>Salary Calculation</h1>
+                <form id="salaryForm">
+                    <label for="baseSalary">Base Salary:</label>
+                    <input type="number" id="baseSalary" name="baseSalary" required>
+                    <br>
+                    <label for="bonus">Bonus:</label>
+                    <input type="number" id="bonus" name="bonus" required>
+                    <br>
+                    <label for="deductions">Deductions:</label>
+                    <input type="number" id="deductions" name="deductions" required>
+                    <br>
+                    <button type="button" onclick="calculateSalary()">Calculate</button>
+                </form>
+                <p id="result"></p>
+            </div>
+        </section>
+        <script>
+            function calculateSalary() {
+                var baseSalary = document.getElementById('baseSalary').value;
+                var bonus = document.getElementById('bonus').value;
+                var deductions = document.getElementById('deductions').value;
+                var totalSalary = parseFloat(baseSalary) + parseFloat(bonus) - parseFloat(deductions);
+                document.getElementById('result').innerText = 'Total Salary: INR.' + totalSalary.toFixed(2);
+            }
+        </script>
+    </body>
+</html>

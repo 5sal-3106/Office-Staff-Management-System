@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tax Deductions</title>
+        <link rel="stylesheet" type="text/css" href="calculation.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="payroll.html">BACK</a></li>
+        </ul>
+        <section class="calculation">
+            <div class="main">
+                <h1>Tax Deductions</h1>
+                <form id="taxForm">
+                    <label for="salary">Total Salary:</label>
+                    <input type="number" id="salary" name="salary" required>
+                    <br>
+                    <label for="taxRate">Tax Rate (%):</label>
+                    <input type="number" id="taxRate" name="taxRate" required>
+                    <br>
+                    <button type="button" onclick="calculateTax()">Calculate</button>
+                </form>
+                <p id="result"></p>
+            </div>
+        </section>
+        <script>
+            function calculateTax() {
+                var salary = document.getElementById('salary').value;
+                var taxRate = document.getElementById('taxRate').value;
+                var taxDeduction = (parseFloat(salary) * parseFloat(taxRate)) / 100;
+                document.getElementById('result').innerText = 'Tax Deduction: INR.' + taxDeduction.toFixed(2);
+            }
+        </script>
+    </body>
+</html>
